@@ -1,0 +1,10 @@
+.layout{
+display: flex;
+flex-direction: column;
+}
+
+.footer{
+    background-color: green;
+    height: 60px;
+    justify-content: end;
+}

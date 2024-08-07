@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import "./navbar.css";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 function Navbar() {
   return (
-    <div>Navbar</div>
-  )
+    <div className="Nav-body">
+   
+    </div>
+    
+  );
 }
 
-export default Navbar
+export default Navbar;
