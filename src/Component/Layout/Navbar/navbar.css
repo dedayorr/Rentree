@@ -1,22 +1,15 @@
 .Nav-body {
   /* position: ; */
   /* top: 0; */
-  background: linear-gradient(
-    -65deg,
-    rgba(23, 102, 238, 0.295),
-    #ffdbde82,
-    #1fddff73,
-    #ff85ae7c,
-    rgba(107, 102, 255, 0.536),
-    #ffb58a7f,
-    #19dfdf86
-  );
-  background-size: 400% 400%;
-  animation: gradient 10s ease infinite;
-  height: 550px;
-  margin-top: -20%;
+
+  /* margin-top: -20%; */
   /* width: 100%; */
   /* opacity: 50%; */
+  background-image: url(/public/bg-three.png);
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  height: 500px;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
 }
@@ -37,17 +30,64 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* margin-top: 25px; */
+  margin-top: 25px;
   margin-left: 15px;
   margin-right: 15px;
+
+  /* background-color: white; */
+}
+
+.logo {
+  background-color: #1a4d2e;
+  color: white;
+  z-index: 90;
 }
 
 .top-one {
-  background-color: white;
+  background-color: #1a4d2e;
   padding: 8px;
   border-radius: 50%;
+  z-index: 90;
+  color: white;
 }
 
 .burger-icon {
   font-size: 25px;
 }
+
+.hero-text {
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
+  color: white;
+  z-index: 1000;
+}
+
+.overlay {
+  position: fixed; /* Sit on top of the page content */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.534); /* Black background with opacity */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10; /* Ensure the overlay is on top */
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+/* background: linear-gradient( */
+/* -65deg, */
+/* rgba(26, 77, 46, 1), */
+/* #F3FF90, */
+/* #1fddff73, */
+/* #ff85ae7c, */
+/* rgba(26, 77, 46, 1), */
+/* #b7ff90a0, */
+/* #2d9953cb */
+/* ); */
+/* background-size: 400% 400%; */
+/* animation: gradient 9s ease infinite; */
+/* height: 500px; */

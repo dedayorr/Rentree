@@ -8,10 +8,10 @@ export default function Layout() {
   return (
     <div className="layout">
       <Navbar />
-      <Page />
-      <div className="footer">
-      <Footer />
-      </div>
+      {/* <Page /> */}
+     
+      {/* <Footer /> */}
+      
     </div>
   );
 }
