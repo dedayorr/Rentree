@@ -1,18 +1,3 @@
-/* .Nav-body {
-  background-image: url(/public/new-bg.png);
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.Nav-body-2 {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(/public/new-bg-1.png);
-  width: 100%;
-} */
 
 @keyframes gradient {
   0% {
@@ -26,17 +11,6 @@
   }
 }
 
-/* .top {
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-  margin-top: 20px;
-  margin-left: 15px;
-  margin-right: 15px;
-  height: 80px;
-  background-color: #1a4d2e;
-} */
-
 .logo {
   color: white;
   z-index: 90;
@@ -45,11 +19,11 @@
 }
 
 .top-one {
-  background-color: #1a4d2e;
+  background-color: #F6E9B2;
   padding: 8px;
   border-radius: 50%;
   /* z-index: 90; */
-  color: white;
+  color: #1a4d2e;
 }
 
 .burger-icon {
@@ -57,72 +31,20 @@
 }
 
 .hero-text {
-  font-size: 27px;
   font-weight: 900;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  /* z-index: 1000; */
+ 
   line-height: 70px;
-  margin-top: 45px;
+
 }
 
-.overlay {
-  margin-top: 60px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-  height: 150px;
-  background-color: #1a4d2e78; /* Black background with opacity */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 10; /* Ensure the overlay is on top */
-}
-
-.hero-buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  /* z-index: 1000; */
-}
-
-.hero-button {
-  background-color: #1a4d2e;
-  width: 65%;
-  height: 45px;
-  color: rgba(255, 255, 255, 0.835);
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
 
 /* =================Tablet View================== */
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  /* .top {
-    height: 100px;
-    display: none;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 60px;
-  
-  } */
-
-  .hero-text {
-    font-size: 40px;
-  }
-
-  .hero-buttons {
-    margin-top: 50px;
-    gap: 20px;
-  }
 
   .hero-button {
     gap: 20px;
@@ -131,21 +53,13 @@
     font-size: 20px;
     border-radius: 15px;
   }
+
+ 
 }
 
 /* =============Desktop View======================= */
 
 @media (min-width: 1024px) and (max-width: 1366px) {
-  .Nav-body {
-    background-image: url(/public/recent.png);
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
 
-  /* .top {
-    margin-top: 60px;
 
-  } */
 }

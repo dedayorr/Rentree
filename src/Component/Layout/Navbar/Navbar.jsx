@@ -6,60 +6,13 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Carousel from "../../LandingPage/Carousel/Carousel";
 
 function Navbar() {
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-  };
-
-  const slidesData = [
-    {
-      image: "https://via.placeholder.com/800x400",
-      text: "Slide 1 Text",
-    },
-    {
-      image: "https://via.placeholder.com/800x400",
-      text: "Slide 2 Text",
-    },
-    {
-      image: "https://via.placeholder.com/800x400",
-      text: "Slide 3 Text",
-    },
-  ];
-
   return (
     <div className="relative">
       {" "}
-      {/* <div className="Nav-body h-[500px] md:h-[600px] absolute lg:hidden">
-        {" "}
-      </div>
-      <div className="Nav-body-2 h-[500px] md:h-[600px] lg:h-[700px] absolute hidden lg:block">
-        {" "}
-      </div> */}
-      <div className="absolute">
-        <Slider {...settings}>
-          {slidesData.map((slide, index) => (
-            <div key={index} className="relative">
-              <img
-                src={slide.image}
-                alt={`Slide ${index + 1}`}
-                className="w-full h-48 md:h-64 lg:h-80 object-cover"
-              />
-              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
-                <h2 className="text-white text-lg sm:text-2xl md:text-3xl lg:text-4xl font-bold">
-                  {slide.text}
-                </h2>
-              </div>
-            </div>
-          ))}
-        </Slider>
-      </div>
+      <Carousel />
       {/* Navigation - mobile view */}
       <div className="top flex justify-between items-end mt-[20px] mx-[3%] h-[80px] md:hidden">
         <div className="logo ">
@@ -82,19 +35,26 @@ function Navbar() {
             alt="logo"
           />
         </div>
-        <ul className="hidden bg-white md:mx-[20px] md:flex justify-between text-[#1a4d2e] font-bold h-[60px] items-center rounded-[50px] gap-[40px] text-[20px] px-[7%] lg:px-[5%] lg:text-[16px] lg:gap-[100px] z-50">
-          <li className="hover:text-[18px] cursor-pointer">Company</li>
-          <li className="hover:text-[18px] cursor-pointer">Services</li>
-          <li className="hover:text-[18px] cursor-pointer">FAQ</li>
+        <ul className="hidden bg-white md:mx-[20px] md:flex justify-between text-[#1a4d2e] font-semibold h-[60px] items-center rounded-[50px] gap-[40px] text-[20px] px-[7%] lg:px-[5%] lg:text-[18px] lg:gap-[100px] z-50">
+          <li className="hover:text-[20px] cursor-pointer">Company</li>
+          <li className="hover:text-[20px] cursor-pointer">Services</li>
+          <li className="hover:text-[20px] cursor-pointer">FAQ</li>
         </ul>
 
         <div className=" hidden md:flex justify-center items-center text-[25px] text-primaryColor bg-white h-[60px] w-[60px] rounded-[50px] hover:bg-[#1a4d2e] hover:text-white cursor-pointer z-50">
           <BsFillTelephoneFill />
         </div>
       </div>
-      <h1 className="hero-text text-white ">WELCOME TO RENTREE</h1>
-      <div className="hero-buttons">
-        <button className="hero-button">
+      <div className="lg:w-[70%] mx-auto mt-[45px] lg:mt-[110px]">
+        <h1 className="hero-text text-white text-[27px] md:text-[40px] lg:text-[60px]">WELCOME TO <span className="text-primaryColor">RENTREE</span></h1>
+        <p className="text-white text-center md:text-[20px] lg:text-[20px] lg:mt-[30px] lg:tracking-[5px]">
+          Your go-to platform for booking <span className="text-primaryColor font-semibold">hotels</span>, renting <span className="text-primaryColor font-semibold">apartments</span>, event
+          centers, and offering <span className="text-primaryColor font-semibold">boats</span> for water voyages, ensuring your
+          experience is seamless and memorable.
+        </p>
+      </div>
+      <div className="hero-buttons flex flex-col gap-[10px] justify-center items-center mt-[80px] md:mt-[50px] md:gap-[20px] lg:gap-[50px] lg:mt-[140px] lg:flex-row">
+        <button className="hero-button bg-primaryColor w-[65%] h-[45px] text-[#f6eab2c8] rounded-[5px] flex justify-center items-center gap-[10px] lg:w-[25%] lg:h-[60px] lg:rounded-[15px] lg:text-[20px] lg:hover:bg-white lg:hover:text-primaryColor">
           <svg
             className="hidden md:block"
             xmlns="http://www.w3.org/2000/svg"
@@ -143,14 +103,14 @@ function Navbar() {
               d="m120.436 141.274l61.278-60.483L48.564 4.503A32.85 32.85 0 0 0 32.051 0C17.644-.028 4.978 9.534 1.06 23.399z"
             ></path>
           </svg>
-          <p>Download on Google Play</p>
+          <p >Download on Google Play</p>
         </button>
-        <button className="hero-button">
+        <button className="hero-button  bg-primaryColor w-[65%] h-[45px] text-[#f6eab2c8] rounded-[5px] flex justify-center items-center gap-[10px] lg:w-[25%] lg:h-[60px] lg:rounded-[15px] lg:text-[20px] lg:hover:bg-white lg:hover:text-primaryColor">
           <svg
-            className="hidden md:block"
+            className="hidden md:block hover:text-primaryColor"
             xmlns="http://www.w3.org/2000/svg"
-            width="1em"
-            height="1em"
+            width="1.5em"
+            height="1.4em"
             viewBox="0 0 56 56"
           >
             <path
