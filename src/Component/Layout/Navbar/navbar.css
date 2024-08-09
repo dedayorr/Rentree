@@ -66,7 +66,7 @@ height: 80px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  color:#ffffff;
+  /* color:#ffffff; */
   z-index: 1000;
   /* font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
   line-height: 70px;
@@ -100,12 +100,17 @@ height: 80px;
 .hero-button{
   background-color: #1a4d2e;
   width: 65%;
-  height: 40px;
-  color: rgba(255, 255, 255, 0.746);
+  height: 45px;
+  color: rgba(255, 255, 255, 0.835);
   border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
  
+}
+
+
+@media (min-width: 640px) and (max-width: 767px) {
+
 }

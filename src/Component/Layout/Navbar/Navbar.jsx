@@ -10,12 +10,20 @@ function Navbar() {
       <div className="Nav-body">
         <div className="top">
           <div className="logo"><img src="./Rentree-Logo1.png" alt="logo"/></div>
-          <div className="top-one burger-icon">
+          
+          {/* hamburger icon -mobile view */}
+          <div className="top-one burger-icon md:hidden">
             <GiHamburgerMenu />
           </div>
+
+          <ul className="bg-white md:mx-[20px] flex justify-between text-[#1a4d2e] font-semibold ">
+            <li className="">Company</li>
+            <li className="">FAQ</li>
+            <li className="">Contact</li>
+          </ul>
         </div>
         {/* <div className="overlay"> */}
-        <h1 className="hero-text" animateIn="fadeIn">
+        <h1 className="hero-text text-white" >
           WELCOME TO RENTREE
         </h1>
 
