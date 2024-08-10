@@ -13,7 +13,7 @@ import { Modal } from "../../../Modal/Modal";
 
 function Navbar() {
   const [navOpen, setNavOpen] = useState(false);
-  const [openModal, setOpenModal] = useState(true);
+  const [openModal, setOpenModal] = useState(false);
 
   const openSideBar = () => {
     setNavOpen(true);
@@ -21,6 +21,15 @@ function Navbar() {
 
   const closeSideBAr = () => {
     setNavOpen(false);
+  };
+
+  const modalClose = () => {
+    setOpenModal(!openModal);
+    alert("free");
+  };
+
+  const modalOpen = () => {
+    setOpenModal(true);
   };
 
   return (
@@ -109,7 +118,10 @@ function Navbar() {
         </p>
       </div>
       <div className="heroBar hero-buttons flex flex-col gap-[10px] justify-center items-center mt-[80px] md:mt-[50px] md:gap-[20px] lg:gap-[50px] lg:mt-[140px] lg:flex-row">
-        <button className="hero-button bg-primaryColor w-[65%] h-[45px] text-[#f6eab2c8] rounded-[5px] flex justify-center items-center gap-[10px] lg:w-[25%] lg:h-[60px] lg:rounded-[15px] lg:text-[20px] lg:hover:bg-white lg:hover:text-primaryColor">
+        <button
+          onClick={modalOpen}
+          className="hero-button bg-primaryColor w-[65%] h-[45px] text-[#f6eab2c8] rounded-[5px] flex justify-center items-center gap-[10px] lg:w-[25%] lg:h-[60px] lg:rounded-[15px] lg:text-[20px] lg:hover:bg-white lg:hover:text-primaryColor"
+        >
           <svg
             className="hidden md:block"
             xmlns="http://www.w3.org/2000/svg"
@@ -160,7 +172,10 @@ function Navbar() {
           </svg>
           <p>Download on Google Play</p>
         </button>
-        <button className="hero-button  bg-primaryColor w-[65%] h-[45px] text-[#f6eab2c8] rounded-[5px] flex justify-center items-center gap-[10px] lg:w-[25%] lg:h-[60px] lg:rounded-[15px] lg:text-[20px] lg:hover:bg-white lg:hover:text-primaryColor">
+        <button
+          onClick={modalOpen}
+          className="hero-button  bg-primaryColor w-[65%] h-[45px] text-[#f6eab2c8] rounded-[5px] flex justify-center items-center gap-[10px] lg:w-[25%] lg:h-[60px] lg:rounded-[15px] lg:text-[20px] lg:hover:bg-white lg:hover:text-primaryColor"
+        >
           <svg
             className="hidden md:block hover:text-primaryColor"
             xmlns="http://www.w3.org/2000/svg"
@@ -192,21 +207,13 @@ function Navbar() {
       {/* ========Coming soon modal======== */}
       {openModal && (
         <Modal>
-          
-          <div className="relative bg-primaryColor h-[55%] w-[90%] md:w-[80%] md:h-[50%] md:rounded-[25px] lg:w-[50%] lg:h-[60%] rounded-[15px]">
-          <IoCloseSharp className="bg-white rounded-full p-1 absolute top-[5%] right-[5%] font-bold text-[30px] md:text-[30px]"/>
-            <Player className="md:hidden"
-              autoplay
-              loop
-              src="https://lottie.host/79df1c42-e7be-44a8-aff2-c9b411d1649f/wUSYcROBzG.json"
-              style={{
-                height: "300px",
-                width: "300px",
-                background: "transparent",
-              }}
-            ></Player>
+          <div className="relative animate-fadeIn bg-primaryColor  w-[90%] md:w-[80%] md:h-[50%] md:rounded-[25px] lg:w-[50%] lg:h-[70%] rounded-[15px]">
+            {/* <div >
+              {" "}
+              <IoCloseSharp className="bg-white rounded-full p-1 absolute top-[5%] right-[5%] font-bold text-[30px] md:text-[30px]" />
+            </div> */}
             <Player
-            className="hidden md:block"
+              className=""
               autoplay
               loop
               src="https://lottie.host/79df1c42-e7be-44a8-aff2-c9b411d1649f/wUSYcROBzG.json"
@@ -219,6 +226,12 @@ function Navbar() {
             <p className="text-[35px] font-bold text-white md:text-[45px] text-center">
               Coming Soon...
             </p>
+            <button
+              onClick={() => setOpenModal(false)}
+              className="bg-white text-primaryColor font-semibold w-[30%] h-[40px] my-[5%] mx-auto flex justify-center items-center hover:bg-tertiaryColor md:text-[20px]"
+            >
+              Close
+            </button>
           </div>
         </Modal>
       )}

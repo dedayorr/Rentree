@@ -30,6 +30,19 @@
   }
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 2.1s ease-in-out;
+}
+
 .logo {
   color: white;
   z-index: 40;
@@ -58,6 +71,7 @@
   line-height: 70px;
 
 }
+
 
 
 /* =================Tablet View================== */
