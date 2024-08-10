@@ -1,19 +1,38 @@
 
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
+.sidebar {
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
+  animation: slideIn 1.8s forwards;
+}
+
+/* Slide in animation */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
   }
-  50% {
-    background-position: 100% 50%;
+  to {
+    transform: translateX(0);
   }
-  100% {
-    background-position: 0% 50%;
+}
+
+.heroBar{
+  transform: translateY(100%);
+  transition: transform 0.5s ease-in-out;
+  animation: heroIn 2s forwards;
+}
+
+@keyframes heroIn {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
   }
 }
 
 .logo {
   color: white;
-  z-index: 90;
+  z-index: 40;
   width: 80px;
   height: 75px;
 }
@@ -36,7 +55,6 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
- 
   line-height: 70px;
 
 }

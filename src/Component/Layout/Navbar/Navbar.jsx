@@ -1,20 +1,67 @@
-import React from "react";
+import React, { useState } from "react";
 import "./navbar.css";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { IoCloseSharp } from "react-icons/io5";
+import { PiBuildingApartmentFill } from "react-icons/pi";
+import { FcServices } from "react-icons/fc";
+import { FcFaq } from "react-icons/fc";
+import { FcPhone } from "react-icons/fc";
 // import { Player } from "@lottiefiles/react-lottie-player";
 import { BsFillTelephoneFill } from "react-icons/bs";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import Carousel from "../../LandingPage/Carousel/Carousel";
 
 function Navbar() {
+  const [navOpen, setNavOpen] = useState(false);
+
+  const openSideBar = () => {
+    setNavOpen(true);
+  };
+
+  const closeSideBAr = () => {
+    setNavOpen(false);
+  };
+
   return (
     <div className="relative">
       {" "}
+      {navOpen && (
+        <div className="sidebar bg-black h-screen absolute top-0 w-full z-50 animate-in">
+          <div
+            onClick={closeSideBAr}
+            className=" bg-primaryColor text-[26px] text-[#F6E9B2] p-[8px] w-[40px] rounded-[50px] absolute top-[7%] right-[7%]"
+          >
+            <IoCloseSharp />
+          </div>
+
+          <img
+            className="mx-auto mt-[25%] w-[130px] h-[120px] md:w-[100px] md:h-[90px]"
+            src="./Rentree-Logo1.png"
+            alt="logo"
+          />
+
+          <ul className="text-white w-[90%] mx-auto flex flex-col ">
+            <li className=" flex items-center text-[25px] mt-[15%] gap-[10%] ">
+              <PiBuildingApartmentFill className="text-secondaryColor text-[45px]" />
+              Company
+            </li>
+            <li className="flex items-center text-[25px] mt-[10%] gap-[10%] ">
+              <FcServices className="text-secondaryColor text-[45px]" />
+              Services
+            </li>
+            <li className="flex items-center text-[25px] mt-[10%] gap-[10%] ">
+              <FcFaq className="text-secondaryColor text-[45px]" />
+              FAQ
+            </li>
+            <li className="flex items-center text-[25px] mt-[10%] gap-[10%] ">
+              <FcPhone className="text-secondaryColor text-[45px]" />
+              Contact
+            </li>
+          </ul>
+        </div>
+      )}
       <Carousel />
       {/* Navigation - mobile view */}
-      <div className="top flex justify-between items-end mt-[20px] mx-[3%] h-[80px] md:hidden">
+      <div className="top flex justify-between items-end mt-[15px] mx-[3%] h-[80px] md:hidden">
         <div className="logo ">
           <img
             className="md:w-[100px] md:h-[90px]"
@@ -22,7 +69,7 @@ function Navbar() {
             alt="logo"
           />
         </div>
-        <div className="top-one burger-icon md:hidden ">
+        <div onClick={openSideBar} className="top-one burger-icon md:hidden ">
           <GiHamburgerMenu />
         </div>
       </div>
@@ -45,15 +92,21 @@ function Navbar() {
           <BsFillTelephoneFill />
         </div>
       </div>
-      <div className="lg:w-[70%] mx-auto mt-[45px] lg:mt-[110px]">
-        <h1 className="hero-text text-white text-[27px] md:text-[40px] lg:text-[60px]">WELCOME TO <span className="text-primaryColor">RENTREE</span></h1>
+      <div className="heroBar lg:w-[70%] mx-auto mt-[45px] lg:mt-[110px]">
+        <h1 className="hero-text text-white text-[27px] md:text-[40px] lg:text-[60px]">
+          WELCOME TO <span className="text-primaryColor">RENTREE</span>
+        </h1>
         <p className="text-white text-center md:text-[20px] lg:text-[20px] lg:mt-[30px] lg:tracking-[5px]">
-          Your go-to platform for booking <span className="text-primaryColor font-semibold">hotels</span>, renting <span className="text-primaryColor font-semibold">apartments</span>, event
-          centers, and offering <span className="text-primaryColor font-semibold">boats</span> for water voyages, ensuring your
-          experience is seamless and memorable.
+          Your go-to platform for booking{" "}
+          <span className="text-primaryColor font-semibold">hotels</span>,
+          renting{" "}
+          <span className="text-primaryColor font-semibold">apartments</span>,
+          event centers, and offering{" "}
+          <span className="text-primaryColor font-semibold">boats</span> for
+          water voyages, ensuring your experience is seamless and memorable.
         </p>
       </div>
-      <div className="hero-buttons flex flex-col gap-[10px] justify-center items-center mt-[80px] md:mt-[50px] md:gap-[20px] lg:gap-[50px] lg:mt-[140px] lg:flex-row">
+      <div className="heroBar hero-buttons flex flex-col gap-[10px] justify-center items-center mt-[80px] md:mt-[50px] md:gap-[20px] lg:gap-[50px] lg:mt-[140px] lg:flex-row">
         <button className="hero-button bg-primaryColor w-[65%] h-[45px] text-[#f6eab2c8] rounded-[5px] flex justify-center items-center gap-[10px] lg:w-[25%] lg:h-[60px] lg:rounded-[15px] lg:text-[20px] lg:hover:bg-white lg:hover:text-primaryColor">
           <svg
             className="hidden md:block"
@@ -103,7 +156,7 @@ function Navbar() {
               d="m120.436 141.274l61.278-60.483L48.564 4.503A32.85 32.85 0 0 0 32.051 0C17.644-.028 4.978 9.534 1.06 23.399z"
             ></path>
           </svg>
-          <p >Download on Google Play</p>
+          <p>Download on Google Play</p>
         </button>
         <button className="hero-button  bg-primaryColor w-[65%] h-[45px] text-[#f6eab2c8] rounded-[5px] flex justify-center items-center gap-[10px] lg:w-[25%] lg:h-[60px] lg:rounded-[15px] lg:text-[20px] lg:hover:bg-white lg:hover:text-primaryColor">
           <svg
