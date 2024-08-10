@@ -6,12 +6,14 @@ import { PiBuildingApartmentFill } from "react-icons/pi";
 import { FcServices } from "react-icons/fc";
 import { FcFaq } from "react-icons/fc";
 import { FcPhone } from "react-icons/fc";
-// import { Player } from "@lottiefiles/react-lottie-player";
+import { Player } from "@lottiefiles/react-lottie-player";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import Carousel from "../../LandingPage/Carousel/Carousel";
+import { Modal } from "../../../Modal/Modal";
 
 function Navbar() {
   const [navOpen, setNavOpen] = useState(false);
+  const [openModal, setOpenModal] = useState(true);
 
   const openSideBar = () => {
     setNavOpen(true);
@@ -186,12 +188,40 @@ function Navbar() {
           <p>Download on App Store</p>
         </button>
       </div>
-      {/* <Player
-          autoplay
-          loop
-          src="https://assets3.lottiefiles.com/packages/lf20_UJNc2t.json"
-          style={{ height: "300px", width: "300px" }}
-        ></Player> */}
+      {/*  */}
+      {/* ========Coming soon modal======== */}
+      {openModal && (
+        <Modal>
+          
+          <div className="relative bg-primaryColor h-[55%] w-[90%] md:w-[80%] md:h-[50%] md:rounded-[25px] lg:w-[50%] lg:h-[60%] rounded-[15px]">
+          <IoCloseSharp className="bg-white rounded-full p-1 absolute top-[5%] right-[5%] font-bold text-[30px] md:text-[30px]"/>
+            <Player className="md:hidden"
+              autoplay
+              loop
+              src="https://lottie.host/79df1c42-e7be-44a8-aff2-c9b411d1649f/wUSYcROBzG.json"
+              style={{
+                height: "300px",
+                width: "300px",
+                background: "transparent",
+              }}
+            ></Player>
+            <Player
+            className="hidden md:block"
+              autoplay
+              loop
+              src="https://lottie.host/79df1c42-e7be-44a8-aff2-c9b411d1649f/wUSYcROBzG.json"
+              style={{
+                height: "300px",
+                width: "300px",
+                background: "transparent",
+              }}
+            ></Player>
+            <p className="text-[35px] font-bold text-white md:text-[45px] text-center">
+              Coming Soon...
+            </p>
+          </div>
+        </Modal>
+      )}
     </div>
   );
 }
