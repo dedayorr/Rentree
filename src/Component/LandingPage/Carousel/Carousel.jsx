@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const Carousel = () => {
@@ -11,8 +11,9 @@ const Carousel = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 3000,
     arrows: false, // Disable arrows for a cleaner look
+    fade: true,
   };
 
   const slidesData = [
@@ -31,6 +32,22 @@ const Carousel = () => {
     {
       image: "../event-bg.png",
       text: "Slide 4 Text",
+    },
+    {
+      image: "../hotel-bg-1.png",
+      text: "Slide 5 Text",
+    },
+    {
+      image: "../hotel.png",
+      text: "Slide 6 Text",
+    },
+    {
+      image: "../cruise.png",
+      text: "Slide 7 Text",
+    },
+    {
+      image: "../hotel-bg-1.png",
+      text: "Slide 8 Text",
     },
   ];
 

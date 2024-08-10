@@ -23,10 +23,6 @@ function Navbar() {
     setNavOpen(false);
   };
 
-  const modalClose = () => {
-    setOpenModal(!openModal);
-    alert("free");
-  };
 
   const modalOpen = () => {
     setOpenModal(true);
