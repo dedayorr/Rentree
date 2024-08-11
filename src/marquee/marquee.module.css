@@ -11,7 +11,7 @@
   color: #1a4d2e54;
   font-size: 100px;
   font-weight: 800;
-  animation: marquee 15s linear 12s infinite;
+  animation: marquee 10s linear 10s infinite;
   padding-left: 100%;
 }
 

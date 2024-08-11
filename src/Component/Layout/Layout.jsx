@@ -40,11 +40,14 @@ export default function Layout() {
 
           <div className="pt-[25%]">
             {" "}
-            <img
-              className="mx-auto  w-[130px] h-[120px] md:w-[100px] md:h-[90px]"
-              src="./Rentree-Logo1.png"
-              alt="logo"
-            />
+            <a href="/">
+              {" "}
+              <img
+                className="mx-auto  w-[130px] h-[120px] md:w-[100px] md:h-[90px]"
+                src="./Rentree-Logo1.png"
+                alt="logo"
+              />
+            </a>
             <ul className="text-white w-[90%] mx-auto flex flex-col ">
               <li
                 onClick={closeSideBAr}
@@ -82,11 +85,14 @@ export default function Layout() {
       <div className="layout sticky top-0 z-40 mt-[7%] lg:mt-[1%]">
         <div className="top z-50 flex justify-between items-end mt-[px] mx-[3%] h-[80px] md:hidden">
           <div className="logo ">
-            <img
-              className="md:w-[100px] md:h-[90px]"
-              src="./Rentree-Logo1.png"
-              alt="logo"
-            />
+            <a href="/">
+              {" "}
+              <img
+                className="md:w-[100px] md:h-[90px]"
+                src="./Rentree-Logo1.png"
+                alt="logo"
+              />
+            </a>
           </div>
           <div onClick={openSideBar} className="top-one burger-icon md:hidden ">
             <GiHamburgerMenu />
@@ -95,11 +101,14 @@ export default function Layout() {
 
         <div className="sticky top-0 hidden md:flex justify-between items-center mx-[5%] mt-[4%]">
           <div className="logo ">
-            <img
-              className="md:w-[100px] md:h-[90px]"
-              src="./Rentree-Logo1.png"
-              alt="logo"
-            />
+            <a href="/">
+              {" "}
+              <img
+                className="md:w-[100px] md:h-[90px]"
+                src="./Rentree-Logo1.png"
+                alt="logo"
+              />
+            </a>
           </div>
           <ul className="hidden bg-white md:mx-[20px] md:flex justify-between text-[#1a4d2e] font-semibold h-[60px] items-center rounded-[50px] gap-[40px] text-[20px] px-[7%] lg:px-[5%] lg:text-[18px] lg:gap-[100px] z-50">
             <li className="hover:text-[20px] cursor-pointer">
