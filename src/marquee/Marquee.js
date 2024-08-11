@@ -3,7 +3,7 @@ import styles from "./marquee.module.css";
 
 const Marquee = ({ text }) => {
   return (
-    <div className={`${styles.marquee} hidden lg:block`}>
+    <div className={`${styles.marquee} `}>
       <div className={styles.marqueeContent}>{text}</div>
     </div>
   );
