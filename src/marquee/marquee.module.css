@@ -1,26 +1,45 @@
 /* components/Marquee.module.css */
 .marquee {
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    /* letter-spacing: 4px; */
-    
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  /* letter-spacing: 4px; */
+}
+
+.marqueeContent {
+  display: inline-block;
+  color: #1a4d2e54;
+  font-size: 100px;
+  font-weight: 800;
+  animation: marquee 15s linear 12s infinite;
+  padding-left: 100%;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
   }
-  
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
   .marqueeContent {
-    display: inline-block;
-    color: #1a4d2e54;
-   font-size: 100px;
-   font-weight: 800;
-    animation: marquee 15s linear 12s infinite;
-    padding-left: 100%;
+    animation: marquee 10s linear infinite;
   }
+
+  .marquee {
+    letter-spacing: 40px;
+    font-size: 200px;
+  }
+}
+
+@media (min-width: 1024px) {
   
-  @keyframes marquee {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
+  .marqueeContent{
+    font-size: 200px;
+    letter-spacing: 50px;
+    animation: marquee 20s linear infinite;
   }
+}

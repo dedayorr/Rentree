@@ -59,7 +59,7 @@ const Carousel = () => {
             <img
               src={slide.image}
               alt={`Slide ${index + 1}`}
-              className="w-full h-[550px] object-cover md:h-[600px] lg:h-[700px]"
+              className="w-full h-[550px] object-cover md:h-[700px] lg:h-[700px]"
             />
             <div className="absolute inset-0 flex items-center justify-center bg-primaryColor bg-opacity-20">
               {/* <h2 className="text-white text-lg sm:text-2xl md:text-3xl lg:text-4xl font-bold">

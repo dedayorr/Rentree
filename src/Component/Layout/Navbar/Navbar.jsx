@@ -1,106 +1,24 @@
 import React, { useState } from "react";
 import "./navbar.css";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { IoCloseSharp } from "react-icons/io5";
-import { PiBuildingApartmentFill } from "react-icons/pi";
-import { FcServices } from "react-icons/fc";
-import { FcFaq } from "react-icons/fc";
-import { FcPhone } from "react-icons/fc";
 import { Player } from "@lottiefiles/react-lottie-player";
-import { BsFillTelephoneFill } from "react-icons/bs";
 import Carousel from "../../LandingPage/Carousel/Carousel";
 import { Modal } from "../../../Modal/Modal";
 
 function Navbar() {
-  const [navOpen, setNavOpen] = useState(false);
+  
   const [openModal, setOpenModal] = useState(false);
-
-  const openSideBar = () => {
-    setNavOpen(true);
-  };
-
-  const closeSideBAr = () => {
-    setNavOpen(false);
-  };
-
 
   const modalOpen = () => {
     setOpenModal(true);
   };
 
   return (
-    <div className="relative">
-      {" "}
-      {navOpen && (
-        <div className="sidebar bg-black h-screen absolute top-0 w-full z-50 animate-in">
-          <div
-            onClick={closeSideBAr}
-            className=" bg-primaryColor text-[26px] text-[#F6E9B2] p-[8px] w-[40px] rounded-[50px] absolute top-[7%] right-[7%]"
-          >
-            <IoCloseSharp />
-          </div>
-
-          <img
-            className="mx-auto mt-[25%] w-[130px] h-[120px] md:w-[100px] md:h-[90px]"
-            src="./Rentree-Logo1.png"
-            alt="logo"
-          />
-
-          <ul className="text-white w-[90%] mx-auto flex flex-col ">
-            <li className=" flex items-center text-[25px] mt-[15%] gap-[10%] ">
-              <PiBuildingApartmentFill className="text-secondaryColor text-[45px]" />
-              Company
-            </li>
-            <li className="flex items-center text-[25px] mt-[10%] gap-[10%] ">
-              <FcServices className="text-secondaryColor text-[45px]" />
-              Services
-            </li>
-            <li className="flex items-center text-[25px] mt-[10%] gap-[10%] ">
-              <FcFaq className="text-secondaryColor text-[45px]" />
-              FAQ
-            </li>
-            <li className="flex items-center text-[25px] mt-[10%] gap-[10%] ">
-              <FcPhone className="text-secondaryColor text-[45px]" />
-              Contact
-            </li>
-          </ul>
-        </div>
-      )}
+    <div className="">
+   
       <Carousel />
-      {/* Navigation - mobile view */}
-      <div className="top flex justify-between items-end mt-[15px] mx-[3%] h-[80px] md:hidden">
-        <div className="logo ">
-          <img
-            className="md:w-[100px] md:h-[90px]"
-            src="./Rentree-Logo1.png"
-            alt="logo"
-          />
-        </div>
-        <div onClick={openSideBar} className="top-one burger-icon md:hidden ">
-          <GiHamburgerMenu />
-        </div>
-      </div>
-      {/* navigation - desktop view */}
-      <div className=" hidden md:flex justify-between items-center mx-[5%] mt-[4%]">
-        <div className="logo ">
-          <img
-            className="md:w-[100px] md:h-[90px]"
-            src="./Rentree-Logo1.png"
-            alt="logo"
-          />
-        </div>
-        <ul className="hidden bg-white md:mx-[20px] md:flex justify-between text-[#1a4d2e] font-semibold h-[60px] items-center rounded-[50px] gap-[40px] text-[20px] px-[7%] lg:px-[5%] lg:text-[18px] lg:gap-[100px] z-50">
-          <li className="hover:text-[20px] cursor-pointer">Company</li>
-          <li className="hover:text-[20px] cursor-pointer">Services</li>
-          <li className="hover:text-[20px] cursor-pointer">FAQ</li>
-        </ul>
-
-        <div className=" hidden md:flex justify-center items-center text-[25px] text-primaryColor bg-white h-[60px] w-[60px] rounded-[50px] hover:bg-[#1a4d2e] hover:text-white cursor-pointer z-50">
-          <BsFillTelephoneFill />
-        </div>
-      </div>
-      <div className="heroBar lg:w-[70%] mx-auto mt-[45px] lg:mt-[110px]">
-        <h1 className="hero-text text-white text-[27px] md:text-[40px] lg:text-[60px]">
+ 
+      <div className="heroBar lg:w-[70%] mx-auto  mt-[13%] lg:mt-[7%]">
+        <h1 className="hero-text text-white text-[27px] md:text-[40px] lg:text-[60px] ">
           WELCOME TO <span className="text-primaryColor">RENTREE</span>
         </h1>
         <p className="text-white text-center md:text-[20px] lg:text-[20px] lg:mt-[30px] lg:tracking-[5px]">

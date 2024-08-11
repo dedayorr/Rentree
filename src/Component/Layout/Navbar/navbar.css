@@ -45,7 +45,7 @@
 
 .logo {
   color: white;
-  z-index: 40;
+  z-index: 60;
   width: 80px;
   height: 75px;
 }
@@ -54,7 +54,7 @@
   background-color: #F6E9B2;
   padding: 8px;
   border-radius: 50%;
-  /* z-index: 90; */
+  z-index: 90;
   color: #1a4d2e;
 }
 
@@ -69,7 +69,7 @@
   margin-right: auto;
   text-align: center;
   line-height: 70px;
-
+ 
 }
 
 
