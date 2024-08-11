@@ -1,0 +1,56 @@
+/* 
+.slide-up {
+    transform: translateY(20px);
+    opacity: 0;
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+  }
+
+  .slide-up.in-view {
+    transform: translateY(0);
+    opacity: 1;
+  } */
+
+  @keyframes slideUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Apply the animation to elements */
+  .slide-up {
+    opacity: 0;
+    animation: slideUp 0.6s ease-in forwards;
+  }
+
+  .about-section {
+    opacity: 0; /* Initial state */
+    transform: translateY(60px); /* Start slightly below the view */
+    animation: slideUp 0.6s ease-in forwards; /* Apply animation */
+  }
+  
+  /* Optionally delay animations for multiple elements */
+  .about-section:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+  .about-section:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+  .about-section:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+
+  .animated-element {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.6s ease-out, transform 5s ease-out;
+  }
+  
+  .animated-element.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }

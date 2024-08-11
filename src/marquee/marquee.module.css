@@ -13,7 +13,7 @@
    font-size: 100px;
    font-weight: 800;
     animation: marquee 15s linear 12s infinite;
-    /* padding-left: -100%; */
+    padding-left: 100%;
   }
   
   @keyframes marquee {
