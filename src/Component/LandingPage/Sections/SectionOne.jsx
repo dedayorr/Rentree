@@ -13,9 +13,9 @@ export const SectionOne = () => {
   });
 
   return (
-    <div className="mt-[20%] md:mt-[10%] lg:mt-[3%]">
+    <div id="about" className="mt-[20%] md:mt-[10%] lg:mt-[3%]">
       <Marquee text="HOTELS - APARTMENTS - BOAT CRUISE - EVENT CENTERS" />
-      <div
+      <div 
         ref={ref}
         className={`animated-element ${
           inView ? "in-view" : ""

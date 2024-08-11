@@ -38,34 +38,48 @@ export default function Layout() {
             <IoCloseSharp />
           </div>
 
-         <div className="pt-[25%]"> <img
-            className="mx-auto  w-[130px] h-[120px] md:w-[100px] md:h-[90px]"
-            src="./Rentree-Logo1.png"
-            alt="logo"
-          />
-
-          <ul className="text-white w-[90%] mx-auto flex flex-col ">
-            <li className=" flex items-center text-[25px] mt-[15%] gap-[10%] ">
-              <PiBuildingApartmentFill className="text-secondaryColor text-[45px]" />
-              Company
-            </li>
-            <li className="flex items-center text-[25px] mt-[10%] gap-[10%] ">
-              <FcServices className="text-secondaryColor text-[45px]" />
-              Services
-            </li>
-            <li className="flex items-center text-[25px] mt-[10%] gap-[10%] ">
-              <FcFaq className="text-secondaryColor text-[45px]" />
-              FAQ
-            </li>
-            <li className="flex items-center text-[25px] mt-[10%] gap-[10%] ">
-              <FcPhone className="text-secondaryColor text-[45px]" />
-              Contact
-            </li>
-          </ul></div>
+          <div className="pt-[25%]">
+            {" "}
+            <img
+              className="mx-auto  w-[130px] h-[120px] md:w-[100px] md:h-[90px]"
+              src="./Rentree-Logo1.png"
+              alt="logo"
+            />
+            <ul className="text-white w-[90%] mx-auto flex flex-col ">
+              <li
+                onClick={closeSideBAr}
+                className=" flex items-center text-[25px] mt-[15%] gap-[10%] "
+              >
+                <PiBuildingApartmentFill className="text-secondaryColor text-[45px]" />
+                <a href="#about">Company</a>
+              </li>
+              <li
+                onClick={closeSideBAr}
+                className="flex items-center text-[25px] mt-[10%] gap-[10%] "
+              >
+                <FcServices className="text-secondaryColor text-[45px]" />
+                <a href="#services"> Services</a>
+              </li>
+              <li
+                onClick={closeSideBAr}
+                className="flex items-center text-[25px] mt-[10%] gap-[10%] "
+              >
+                <FcFaq className="text-secondaryColor text-[45px]" />
+                <a href="#faq">FAQ</a>
+              </li>
+              <li
+                onClick={closeSideBAr}
+                className="flex items-center text-[25px] mt-[10%] gap-[10%] "
+              >
+                <FcPhone className="text-secondaryColor text-[45px]" />
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
       )}
 
-      <div className="layout sticky top-0 z-50 mt-[7%] lg:mt-[1%]">
+      <div className="layout sticky top-0 z-40 mt-[7%] lg:mt-[1%]">
         <div className="top z-50 flex justify-between items-end mt-[px] mx-[3%] h-[80px] md:hidden">
           <div className="logo ">
             <img
@@ -88,9 +102,16 @@ export default function Layout() {
             />
           </div>
           <ul className="hidden bg-white md:mx-[20px] md:flex justify-between text-[#1a4d2e] font-semibold h-[60px] items-center rounded-[50px] gap-[40px] text-[20px] px-[7%] lg:px-[5%] lg:text-[18px] lg:gap-[100px] z-50">
-            <li className="hover:text-[20px] cursor-pointer">Company</li>
-            <li className="hover:text-[20px] cursor-pointer">Services</li>
-            <li className="hover:text-[20px] cursor-pointer">FAQ</li>
+            <li className="hover:text-[20px] cursor-pointer">
+              {" "}
+              <a href="#about">Company</a>
+            </li>
+            <li className="hover:text-[20px] cursor-pointer">
+              <a href="#services"> Services</a>
+            </li>
+            <li className="hover:text-[20px] cursor-pointer">
+              <a href="#faq">FAQ</a>
+            </li>
           </ul>
 
           <div className=" hidden md:flex justify-center items-center text-[25px] text-primaryColor bg-white h-[60px] w-[60px] rounded-[50px] hover:bg-[#1a4d2e] hover:text-white cursor-pointer z-50">
