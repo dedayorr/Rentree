@@ -13,7 +13,6 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 
 export default function Layout() {
   const [navOpen, setNavOpen] = useState(false);
-  // const [openModal, setOpenModal] = useState(false);
 
   const openSideBar = () => {
     setNavOpen(true);
@@ -23,9 +22,6 @@ export default function Layout() {
     setNavOpen(false);
   };
 
-  // const modalOpen = () => {
-  //   setOpenModal(true);
-  // };
 
   return (
     <div className="">

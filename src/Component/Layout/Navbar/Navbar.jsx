@@ -5,7 +5,6 @@ import Carousel from "../../LandingPage/Carousel/Carousel";
 import { Modal } from "../../../Modal/Modal";
 
 function Navbar() {
-  
   const [openModal, setOpenModal] = useState(false);
 
   const modalOpen = () => {
@@ -14,9 +13,8 @@ function Navbar() {
 
   return (
     <div className="">
-   
       <Carousel />
- 
+
       <div className="heroBar lg:w-[70%] mx-auto  mt-[13%] lg:mt-[7%]">
         <h1 className="hero-text text-white text-[27px] md:text-[40px] lg:text-[60px] ">
           WELCOME TO <span className="text-primaryColor">RENTREE</span>
@@ -26,7 +24,7 @@ function Navbar() {
           <span className="text-primaryColor font-semibold">hotels</span>,
           renting{" "}
           <span className="text-primaryColor font-semibold">apartments</span>,
-          event centers, and offering{" "}
+          and offering{" "}
           <span className="text-primaryColor font-semibold">boats</span> for
           water voyages, ensuring your experience is seamless and memorable.
         </p>

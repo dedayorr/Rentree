@@ -1,7 +1,5 @@
 import React from "react";
 import "./sections.css";
-import "../../../marquee/Marquee";
-import Marquee from "../../../marquee/Marquee";
 import { useInView } from "react-intersection-observer";
 import "animate.css";
 import "animate.css/animate.min.css";
@@ -14,8 +12,12 @@ export const SectionOne = () => {
 
   return (
     <div id="about" className="mt-[20%] md:mt-[10%] lg:mt-[3%]">
-      <Marquee text="HOTELS - APARTMENTS - BOAT CRUISE - EVENT CENTERS" />
-      <div 
+     
+  
+      <div className="scrolling-text">
+        <div className="scroll-content ">HOTELS - APARTMENTS - BOAT CRUISE  </div>
+      </div>
+      <div
         ref={ref}
         className={`animated-element ${
           inView ? "in-view" : ""
@@ -23,7 +25,7 @@ export const SectionOne = () => {
       >
         <div className="w-full lg:w-1/2">
           {" "}
-          <h2 className=" text-primaryColor font-bold text-[25px] animate__animated animate__bounce md:text-[30px] lg:text-[40px]">
+          <h2 className=" text-primaryColor font-bold text-[25px] md:text-[30px] lg:text-[40px]">
             ABOUT
           </h2>
           <hr className=" bg-black h-[5px] w-[10%] mb-[5%] lg:w-[10%]" />
@@ -31,7 +33,7 @@ export const SectionOne = () => {
             {" "}
             <p className=" text-justify md:text-[20px]">
               Welcome to Rentree, the premier platform designed to simplify the
-              process of booking accommodations and renting spaces in Lagos.{" "}
+              process of booking accommodations and renting spaces in Nigeria.{" "}
             </p>
             <br />
             <img
@@ -55,7 +57,11 @@ export const SectionOne = () => {
             </div>
           </div>
         </div>
-        <img className="hidden lg:block lg:w-1/2 object-cover" src="./about-image.png" alt="about-image" />
+        <img
+          className="hidden lg:block lg:w-1/2 object-cover"
+          src="./about-image.png"
+          alt="about-image"
+        />
       </div>
     </div>
   );
