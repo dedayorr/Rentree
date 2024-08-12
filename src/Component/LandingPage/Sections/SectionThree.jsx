@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./sections.css";
+import { useInView } from "react-intersection-observer";
 
 function SectionThree() {
   const [openIndex, setOpenIndex] = useState(null);
@@ -8,6 +9,11 @@ function SectionThree() {
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
+
+  const { ref, inView } = useInView({
+    triggerOnce: true, // Trigger animation only once
+    threshold: 0.1, // Trigger when 10% of the element is visible
+  });
 
   const faqs = [
     {
@@ -44,9 +50,10 @@ function SectionThree() {
         </h4>
         <hr className=" bg-white h-[5px] w-[10%] mb-[5%] lg:w-[10%]" />
         {faqs.map((faq, index) => (
-          <div 
+          <div
+            ref={ref}
             key={index}
-            className={`faq-item ${
+            className={`animated-element ${inView ? "in-view" : ""} faq-item ${
               openIndex === index ? "active" : ""
             } flex flex-col `}
           >

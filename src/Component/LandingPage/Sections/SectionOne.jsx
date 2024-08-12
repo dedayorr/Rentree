@@ -12,10 +12,10 @@ export const SectionOne = () => {
 
   return (
     <div id="about" className="mt-[20%] md:mt-[10%] lg:mt-[3%]">
-     
-  
       <div className="scrolling-text">
-        <div className="scroll-content ">HOTELS - APARTMENTS - BOAT CRUISE  </div>
+        <div className="scroll-content ">
+          HOTELS - APARTMENTS - BOAT CRUISE{" "}
+        </div>
       </div>
       <div
         ref={ref}

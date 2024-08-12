@@ -6,6 +6,7 @@ import { MdEmail } from "react-icons/md";
 import { Modal } from "../../../Modal/Modal";
 import { Player } from "@lottiefiles/react-lottie-player";
 
+
 function Footer() {
 
   const [openModal, setOpenModal] = useState(false);
@@ -16,7 +17,7 @@ function Footer() {
 
 
   return (
-    <div className="bg-primaryColor py-[15%]">
+    <div className="bg-primaryColor py-[15%] lg:py-[2%]">
        <a href="/">
               {" "}
               <img
@@ -26,16 +27,16 @@ function Footer() {
               />
             </a>
 
-      <div className="flex gap-[10%] justify-center my-[10%]">
-        <AiFillInstagram className="text-[50px] text-secondaryColor"/>
-        <BsFacebook className="text-[50px] text-secondaryColor"/>
-        <MdEmail className="text-[50px] text-secondaryColor"/>
+      <div className="flex gap-[10%] justify-center my-[10%] lg:my-[2%]">
+        <AiFillInstagram className="cursor-pointer text-[50px] text-secondaryColor"/>
+        <BsFacebook className="cursor-pointer text-[50px] text-secondaryColor"/>
+        <MdEmail className="cursor-pointer text-[50px] text-secondaryColor"/>
       </div>
 
-      <div className="heroBar hero-buttons flex flex-col gap-[10px] justify-center items-center mt-[80px] md:mt-[50px] md:gap-[20px] lg:gap-[50px] lg:mt-[140px] lg:flex-row">
+      <div className="heroBar hero-buttons flex flex-col gap-[10px] justify-center items-center mt-[80px] md:mt-[50px] md:gap-[20px] lg:gap-[50px] lg:mt-[50px] lg:flex-row">
         <button
           onClick={modalOpen}
-          className="hero-button bg-white w-[65%] h-[45px] text-primaryColor rounded-[5px] flex justify-center items-center gap-[10px] lg:w-[25%] lg:h-[60px] lg:rounded-[15px] lg:text-[20px] lg:hover:bg-white lg:hover:text-primaryColor"
+          className="hero-button bg-white w-[65%] h-[45px] text-primaryColor rounded-[5px] flex justify-center items-center gap-[10px] lg:w-[25%] lg:h-[60px] lg:rounded-[15px] lg:text-[20px] lg:hover:text-primaryColor lg:hover:bg-secondaryColor"
         >
           <svg
             className="hidden md:block"
@@ -89,7 +90,7 @@ function Footer() {
         </button>
         <button
           onClick={modalOpen}
-          className="hero-button  bg-white w-[65%] h-[45px] text-primaryColor rounded-[5px] flex justify-center items-center gap-[10px] lg:w-[25%] lg:h-[60px] lg:rounded-[15px] lg:text-[20px] lg:hover:bg-white lg:hover:text-primaryColor"
+          className="hero-button  bg-white w-[65%] h-[45px] text-primaryColor rounded-[5px] flex justify-center items-center gap-[10px] lg:w-[25%] lg:h-[60px] lg:rounded-[15px] lg:text-[20px] lg:hover:text-primaryColor lg:hover:bg-secondaryColor"
         >
           <svg
             className="hidden md:block hover:text-primaryColor"
