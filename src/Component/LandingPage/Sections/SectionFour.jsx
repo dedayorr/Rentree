@@ -9,7 +9,7 @@ function SectionFour() {
           CONTACT
         </h4>
         <hr className=" bg-black h-[5px] w-[19%] mb-[5%] lg:w-[10%]" />
-        <p className=" text-justify md:text-[20px] mb-[5%]">
+        <p id="contact" className=" text-justify md:text-[20px] mb-[5%]">
           We are here to assist you with any questions or concerns you may have.
           Please feel free to reach out to us:
         </p>

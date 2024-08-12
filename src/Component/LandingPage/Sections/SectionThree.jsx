@@ -37,14 +37,14 @@ function SectionThree() {
   ];
 
   return (
-    <div className="bg-black flex items-stretch">
+    <div id="faq" className="bg-black flex items-stretch">
       <div className="faq-container  py-[20%] px-[5%] w-full lg:w-1/2 lg:py-[5%]">
         <h4 className="text-white font-bold text-[25px] md:text-[30px] lg:text-[40px]">
           FAQs
         </h4>
         <hr className=" bg-white h-[5px] w-[10%] mb-[5%] lg:w-[10%]" />
         {faqs.map((faq, index) => (
-          <div
+          <div 
             key={index}
             className={`faq-item ${
               openIndex === index ? "active" : ""

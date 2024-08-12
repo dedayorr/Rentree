@@ -22,7 +22,7 @@ const SectionTwo = () => {
         />
       </div>
 
-      <div className="py-[15%] px-[5%] lg:py-[10%]">
+      <div id="services" className="py-[15%] px-[5%] lg:py-[10%]">
         <div>
           {" "}
           <h2 className=" text-primaryColor font-bold text-[25px] md:text-[30px] lg:text-[40px]">
@@ -31,7 +31,7 @@ const SectionTwo = () => {
           <hr className=" bg-black h-[5px] w-[30%] mb-[5%] lg:w-[10%]" />
           
         </div>
-        <div id="services">
+        <div >
           <div className="text-justify md:text-[20px]">
             At Rentree, we pride ourselves on offering a variety of options to
             suit every occasion:

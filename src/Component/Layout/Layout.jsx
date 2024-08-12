@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "./Navbar/Navbar";
-// import Footer from "./Footer/Footer";
+import Footer from "./Footer/Footer";
 import Page from "../LandingPage/Page";
 import "./layout.css";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -127,7 +127,7 @@ export default function Layout() {
       <Navbar />
       <Page />
 
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
