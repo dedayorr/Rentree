@@ -22,21 +22,22 @@ const SectionTwo = () => {
         />
       </div>
 
-      <div className="py-[15%] px-[5%]">
+      <div className="py-[15%] px-[5%] lg:py-[10%]">
         <div>
           {" "}
           <h2 className=" text-primaryColor font-bold text-[25px] md:text-[30px] lg:text-[40px]">
             What we offer
           </h2>
           <hr className=" bg-black h-[5px] w-[30%] mb-[5%] lg:w-[10%]" />
+          
         </div>
         <div id="services">
           <div className="text-justify md:text-[20px]">
             At Rentree, we pride ourselves on offering a variety of options to
             suit every occasion:
           </div>
-          <div>
-            <div className="border-[4px] border-black rounded-[15px]  mt-[10%]">
+          <div className="flex flex-col gap-[30px] mt-[10%] lg:flex-row lg:w-[100%] lg:mt-[5%]">
+            <div className="border-[4px] border-black rounded-[15px] w-full">
               <div className="text-[24px] font-bold tracking-widest text-center py-[5%] bg-primaryColor rounded-tl-[10px] rounded-tr-[10px]">
                 APARTMENTS
               </div>
@@ -53,7 +54,7 @@ const SectionTwo = () => {
               </ul>
             </div>
 
-            <div className="border-[4px] border-black rounded-[15px]  mt-[10%]">
+            <div className="border-[4px] border-black rounded-[15px] w-full ">
               <div className="text-[24px] font-bold tracking-widest text-center py-[5%] bg-primaryColor rounded-tl-[10px] rounded-tr-[10px]">
                 HOTELS
               </div>
@@ -70,7 +71,7 @@ const SectionTwo = () => {
               </ul>
             </div>
 
-            <div className="border-[4px] border-black rounded-[15px]  mt-[10%]">
+            <div className="border-[4px] border-black rounded-[15px] w-full ">
               <div className="text-[24px] font-bold tracking-widest text-center py-[5%] bg-primaryColor rounded-tl-[10px] rounded-tr-[10px]">
                 BOAT
               </div>

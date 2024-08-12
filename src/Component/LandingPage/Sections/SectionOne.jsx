@@ -37,7 +37,7 @@ export const SectionOne = () => {
             </p>
             <br />
             <img
-              className="rounded-[100px] lg:hidden"
+              className=" lg:hidden"
               src="./about-image.png"
               alt="info-image"
             />
