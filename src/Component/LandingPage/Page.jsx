@@ -3,6 +3,7 @@ import { SectionOne } from './Sections/SectionOne'
 import "./Page.css"
 import SectionTwo from './Sections/SectionTwo'
 import SectionThree from './Sections/SectionThree'
+import SectionFour from './Sections/SectionFour'
 
 function Page() {
   return (
@@ -10,6 +11,7 @@ function Page() {
       <SectionOne/>
       <SectionTwo/>
       <SectionThree/>
+      <SectionFour/>
     </div>
   )
 }
