@@ -1,12 +1,9 @@
 import React from "react";
 import "./sections.css";
-import { useInView } from "react-intersection-observer";
+
 
 const SectionTwo = () => {
-  const { ref, inView } = useInView({
-    triggerOnce: true, // Trigger animation only once
-    threshold: 0.1, // Trigger when 10% of the element is visible
-  });
+
 
   return (
     <div className="my-[20%] lg:my-[5%]">
@@ -46,10 +43,8 @@ const SectionTwo = () => {
           </div>
           <div className="flex flex-col gap-[30px] mt-[10%] lg:flex-row lg:w-[100%] lg:mt-[5%]">
             <div
-              ref={ref}
-              className={`animated-element ${
-                inView ? "in-view" : ""
-              } border-[4px] border-black rounded-[15px] w-full`}
+             
+              className={` border-[4px] border-black rounded-[15px] w-full`}
             >
               <div className="text-[24px] font-bold tracking-widest text-center py-[5%] bg-primaryColor rounded-tl-[10px] rounded-tr-[10px]">
                 APARTMENTS
@@ -68,10 +63,8 @@ const SectionTwo = () => {
             </div>
 
             <div
-              ref={ref}
-              className={`animated-element ${
-                inView ? "in-view" : ""
-              } border-[4px] border-black rounded-[15px] w-full `}
+           
+              className={`border-[4px] border-black rounded-[15px] w-full `}
             >
               <div className="text-[24px] font-bold tracking-widest text-center py-[5%] bg-primaryColor rounded-tl-[10px] rounded-tr-[10px]">
                 HOTELS
@@ -90,10 +83,8 @@ const SectionTwo = () => {
             </div>
 
             <div
-              ref={ref}
-              className={`animated-element ${
-                inView ? "in-view" : ""
-              } border-[4px] border-black rounded-[15px] w-full `}
+            
+              className={` border-[4px] border-black rounded-[15px] w-full `}
             >
               <div className="text-[24px] font-bold tracking-widest text-center py-[5%] bg-primaryColor rounded-tl-[10px] rounded-tr-[10px]">
                 BOAT
