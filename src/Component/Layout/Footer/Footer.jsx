@@ -22,7 +22,7 @@ function Footer() {
               {" "}
               <img
                 className="mx-auto  w-[130px] h-[120px] md:w-[100px] md:h-[90px]"
-                src="./Rentree-Logo2.png"
+                src="./footer/Rentree-Logo2.png"
                 alt="logo"
               />
             </a>
