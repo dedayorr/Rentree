@@ -5,32 +5,30 @@ import { BsFacebook } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { Modal } from "../../../Modal/Modal";
 import { Player } from "@lottiefiles/react-lottie-player";
-
+import { RentreeLogo2 } from "../../../../public/footer/Rentree-logo2.png";
 
 function Footer() {
-
   const [openModal, setOpenModal] = useState(false);
 
   const modalOpen = () => {
     setOpenModal(true);
   };
 
-
   return (
     <div className="bg-primaryColor py-[15%] lg:py-[2%]">
-       <a href="/">
-              {" "}
-              <img
-                className="mx-auto  w-[130px] h-[120px] md:w-[100px] md:h-[90px]"
-                src="./footer/Rentree-Logo2.png"
-                alt="logo"
-              />
-            </a>
+      <a href="/">
+        {" "}
+        <img
+          className="mx-auto  w-[130px] h-[120px] md:w-[100px] md:h-[90px]"
+          src={RentreeLogo2}
+          alt="logo"
+        />
+      </a>
 
       <div className="flex gap-[10%] justify-center my-[10%] lg:my-[2%]">
-        <AiFillInstagram className="cursor-pointer text-[50px] text-secondaryColor"/>
-        <BsFacebook className="cursor-pointer text-[50px] text-secondaryColor"/>
-        <MdEmail className="cursor-pointer text-[50px] text-secondaryColor"/>
+        <AiFillInstagram className="cursor-pointer text-[50px] text-secondaryColor" />
+        <BsFacebook className="cursor-pointer text-[50px] text-secondaryColor" />
+        <MdEmail className="cursor-pointer text-[50px] text-secondaryColor" />
       </div>
 
       <div className="heroBar hero-buttons flex flex-col gap-[10px] justify-center items-center mt-[80px] md:mt-[50px] md:gap-[20px] lg:gap-[50px] lg:mt-[50px] lg:flex-row">
@@ -120,8 +118,8 @@ function Footer() {
         </button>
       </div>
 
-       {/* ========Coming soon modal======== */}
-       {openModal && (
+      {/* ========Coming soon modal======== */}
+      {openModal && (
         <Modal>
           <div className="relative animate-fadeIn bg-primaryColor  w-[90%] md:w-[80%] md:h-[50%] md:rounded-[25px] lg:w-[50%] lg:h-[70%] rounded-[15px]">
             {/* <div >
