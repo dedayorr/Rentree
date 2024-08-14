@@ -5,7 +5,8 @@ import { BsFacebook } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { Modal } from "../../../Modal/Modal";
 import { Player } from "@lottiefiles/react-lottie-player";
-import { RentreeLogo2 } from "../../../../public/footer/Rentree-logo2.png";
+import logo from './image/Rentreelogo2.png';
+
 
 function Footer() {
   const [openModal, setOpenModal] = useState(false);
@@ -20,7 +21,7 @@ function Footer() {
         {" "}
         <img
           className="mx-auto  w-[130px] h-[120px] md:w-[100px] md:h-[90px]"
-          src={RentreeLogo2}
+          src={logo}
           alt="logo"
         />
       </a>
