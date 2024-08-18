@@ -5,8 +5,7 @@ import { BsFacebook } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { Modal } from "../../../Modal/Modal";
 import { Player } from "@lottiefiles/react-lottie-player";
-import logo from './image/Rentreelogo2.png';
-
+import logo from "./image/Rentreelogo2.png";
 
 function Footer() {
   const [openModal, setOpenModal] = useState(false);
@@ -27,9 +26,17 @@ function Footer() {
       </a>
 
       <div className="flex gap-[10%] justify-center my-[10%] lg:my-[2%]">
-        <AiFillInstagram className="cursor-pointer text-[50px] text-secondaryColor" />
+        <a
+          href="https://www.instagram.com/rentree_app"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <AiFillInstagram className="cursor-pointer text-[50px] text-secondaryColor" />
+        </a>{" "}
         <BsFacebook className="cursor-pointer text-[50px] text-secondaryColor" />
-        <MdEmail className="cursor-pointer text-[50px] text-secondaryColor" />
+        <a href="mailto:rentreeapp9@gmail.com" target="_blank" rel="noreferrer">
+          <MdEmail className="cursor-pointer text-[50px] text-secondaryColor" />
+        </a>
       </div>
 
       <div className="heroBar hero-buttons flex flex-col gap-[10px] justify-center items-center mt-[80px] md:mt-[50px] md:gap-[20px] lg:gap-[50px] lg:mt-[50px] lg:flex-row">

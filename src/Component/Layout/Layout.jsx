@@ -13,6 +13,7 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 
 export default function Layout() {
   const [navOpen, setNavOpen] = useState(false);
+  const [openContact, setContactOpen] = useState(false);
 
   const openSideBar = () => {
     setNavOpen(true);
@@ -21,7 +22,6 @@ export default function Layout() {
   const closeSideBAr = () => {
     setNavOpen(false);
   };
-
 
   return (
     <div className="">
@@ -119,8 +119,24 @@ export default function Layout() {
             </li>
           </ul>
 
-          <div className=" hidden md:flex justify-center items-center text-[25px] text-primaryColor bg-white h-[60px] w-[60px] rounded-[50px] hover:bg-[#1a4d2e] hover:text-white cursor-pointer z-50">
-            <BsFillTelephoneFill />
+          <div
+            onClick={() => setContactOpen(!openContact)}
+            className="relative hidden md:flex justify-center items-center text-[25px] hover:bg-[#1a4d2e] hover:text-white text-primaryColor bg-white h-[60px] w-[60px] rounded-[50px]  cursor-pointer z-50"
+          >
+            <BsFillTelephoneFill className="" />
+            {openContact && (
+              <div
+                className="bg-white absolute flex flex-col top-[105%] p-5 gap-[10px] text-[#1a4d2e]"
+                style={{ boxShadow: "rgba(0, 225, 0, 0.5) 0px 5px 15px" }}
+              >
+                <a className="hover:underline" href="tel:+2348165229144">
+                  08165229144
+                </a>
+                <a className="hover:underline" href="tel:+2349060770017">
+                  09060770017
+                </a>
+              </div>
+            )}
           </div>
         </div>
       </div>

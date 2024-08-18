@@ -31,23 +31,44 @@ function SectionFour() {
         <div className="w-full lg:w-1/2 lg:text-[20px]">
           <div className="">
             Email :{" "}
-            <span className="text-primaryColor underline">
-              rentree@email.com
-            </span>
+            <a
+              href="mailto:rentreeapp9@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+              className="text-primaryColor underline"
+            >
+              rentreeapp9@gmail.com
+            </a>
           </div>
-          <div className="">
+          <div className="flex gap-[10px]">
             Phone :{" "}
-            <span className="text-primaryColor underline">+234 xxxx xxxx</span>
+            <a
+              href="tel:+2348165229144"
+              className="text-primaryColor underline"
+            >
+              +2348165229144
+            </a>
+            <a
+              href="tel:+2349060770017"
+              className="text-primaryColor underline"
+            >
+              +2349060770017
+            </a>
           </div>
           <p className="my-[5%]">Follow us on social media:</p>
           <div className="">
             Facebook :{" "}
             <span className="text-primaryColor underline">facebook link</span>
           </div>
-          <div className="">
+          <a
+            href="https://www.instagram.com/rentree_app"
+            target="_blank"
+            rel="noreferrer"
+            className=""
+          >
             Instagram :{" "}
-            <span className="text-primaryColor underline">Instagram link</span>
-          </div>
+            <span className="text-primaryColor underline">@rentree_app</span>
+          </a>
         </div>
         <Player
           className="w-full lg:w-1/2 hidden lg:block"
