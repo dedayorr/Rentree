@@ -5,7 +5,7 @@ import { BsFacebook } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { Modal } from "../../../Modal/Modal";
 import { Player } from "@lottiefiles/react-lottie-player";
-import logo from "./image/logo512.png";
+import logo from "./image/new-logo-bg.png";
 
 function Footer() {
   const [openModal, setOpenModal] = useState(false);
