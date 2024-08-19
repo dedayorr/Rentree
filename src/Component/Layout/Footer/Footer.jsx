@@ -6,6 +6,8 @@ import { MdEmail } from "react-icons/md";
 import { Modal } from "../../../Modal/Modal";
 import { Player } from "@lottiefiles/react-lottie-player";
 import logo from "./image/new-logo-bg.png";
+import { BsTwitter } from "react-icons/bs";
+
 
 function Footer() {
   const [openModal, setOpenModal] = useState(false);
@@ -33,9 +35,14 @@ function Footer() {
         >
           <AiFillInstagram className="cursor-pointer text-[50px] text-secondaryColor" />
         </a>{" "}
-        <BsFacebook className="cursor-pointer text-[50px] text-secondaryColor" />
+        <a href="" target="_blank" rel="noreferrer">
+          <BsFacebook className="cursor-pointer text-[50px] text-secondaryColor" />
+        </a>
         <a href="mailto:rentreeapp9@gmail.com" target="_blank" rel="noreferrer">
           <MdEmail className="cursor-pointer text-[50px] text-secondaryColor" />
+        </a>
+        <a href="" target="_blank" rel="noreferrer">
+          <BsTwitter className="cursor-pointer text-[50px] text-secondaryColor" />
         </a>
       </div>
 

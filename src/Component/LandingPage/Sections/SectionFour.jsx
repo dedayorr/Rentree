@@ -69,6 +69,15 @@ function SectionFour() {
             Instagram :{" "}
             <span className="text-primaryColor underline">@rentree_app</span>
           </a>
+          <a
+            href="https://www.instagram.com/rentree_app"
+            target="_blank"
+            rel="noreferrer"
+            className=""
+          >
+            Twitter :{" "}
+            <span className="text-primaryColor underline">twitter link</span>
+          </a>
         </div>
         <Player
           className="w-full lg:w-1/2 hidden lg:block"
