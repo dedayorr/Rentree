@@ -40,7 +40,7 @@ export default function Layout() {
               {" "}
               <img
                 className="mx-auto  w-[130px] h-[120px] md:w-[100px] md:h-[90px]"
-                src="./Rentree-Logo1.png"
+                src="./logo512.png"
                 alt="logo"
               />
             </a>
@@ -85,7 +85,7 @@ export default function Layout() {
               {" "}
               <img
                 className="md:w-[100px] md:h-[90px]"
-                src="./Rentree-Logo1.png"
+                src="./logo512.png"
                 alt="logo"
               />
             </a>
@@ -100,8 +100,8 @@ export default function Layout() {
             <a href="/">
               {" "}
               <img
-                className="md:w-[100px] md:h-[90px]"
-                src="./Rentree-Logo1.png"
+                className="md:w-[200%] md:h-[100px] "
+                src="./new-logo-bg.png"
                 alt="logo"
               />
             </a>
