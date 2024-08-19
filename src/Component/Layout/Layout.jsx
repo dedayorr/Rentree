@@ -84,8 +84,8 @@ export default function Layout() {
             <a href="/">
               {" "}
               <img
-                className="md:w-[100px] md:h-[90px]"
-                src="./logo512.png"
+                className="h-[90px] md:w-[100px] md:h-[90px]"
+                src="./new-logo-bg.png"
                 alt="logo"
               />
             </a>
