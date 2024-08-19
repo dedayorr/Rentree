@@ -41,7 +41,7 @@ function SectionFour() {
             </a>
           </div>
           <div className="flex gap-[10px]">
-            Phone :{" "}
+            Phone:{" "}
             <a
               href="tel:+2348165229144"
               className="text-primaryColor underline"
@@ -56,28 +56,31 @@ function SectionFour() {
             </a>
           </div>
           <p className="my-[5%]">Follow us on social media:</p>
-          <div className="">
-            Facebook :{" "}
-            <span className="text-primaryColor underline">facebook link</span>
+          <div className="flex flex-col">
+            {" "}
+            <a href="" target="_blank" rel="noreferrer" className="">
+              Facebook :{" "}
+              <span className="text-primaryColor underline">facebook link</span>
+            </a>
+            <a
+              href="https://www.instagram.com/rentree_app"
+              target="_blank"
+              rel="noreferrer"
+              className=""
+            >
+              Instagram :{" "}
+              <span className="text-primaryColor underline">@rentree_app</span>
+            </a>
+            <a
+              href="https://www.instagram.com/rentree_app"
+              target="_blank"
+              rel="noreferrer"
+              className=""
+            >
+              Twitter :{" "}
+              <span className="text-primaryColor underline">twitter link</span>
+            </a>
           </div>
-          <a
-            href="https://www.instagram.com/rentree_app"
-            target="_blank"
-            rel="noreferrer"
-            className=""
-          >
-            Instagram :{" "}
-            <span className="text-primaryColor underline">@rentree_app</span>
-          </a>
-          <a
-            href="https://www.instagram.com/rentree_app"
-            target="_blank"
-            rel="noreferrer"
-            className=""
-          >
-            Twitter :{" "}
-            <span className="text-primaryColor underline">twitter link</span>
-          </a>
         </div>
         <Player
           className="w-full lg:w-1/2 hidden lg:block"
