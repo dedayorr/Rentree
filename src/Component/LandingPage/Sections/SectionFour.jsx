@@ -58,7 +58,7 @@ function SectionFour() {
           <p className="my-[5%]">Follow us on social media:</p>
           <div className="flex flex-col">
             {" "}
-            <a href="" target="_blank" rel="noreferrer" className="">
+            <a href="https://www.facebook.com/profile.php?id=61564336841516" target="_blank" rel="noreferrer" className="">
               Facebook :{" "}
               <span className="text-primaryColor underline">facebook link</span>
             </a>
@@ -72,7 +72,7 @@ function SectionFour() {
               <span className="text-primaryColor underline">@rentree_app</span>
             </a>
             <a
-              href="https://www.instagram.com/rentree_app"
+              href="https://x.com/RentreeApp"
               target="_blank"
               rel="noreferrer"
               className=""
