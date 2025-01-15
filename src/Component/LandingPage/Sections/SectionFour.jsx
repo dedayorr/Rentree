@@ -32,12 +32,12 @@ function SectionFour() {
           <div className="">
             Email :{" "}
             <a
-              href="mailto:rentreeapp9@gmail.com"
+              href="mailto:therentree@gmail.com"
               target="_blank"
               rel="noreferrer"
               className="text-primaryColor underline"
             >
-              rentreeapp9@gmail.com
+              therentree@gmail.com
             </a>
           </div>
           <div className="flex gap-[10px]">
