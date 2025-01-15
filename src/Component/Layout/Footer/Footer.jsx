@@ -41,7 +41,7 @@ function Footer() {
         >
           <BsFacebook className="cursor-pointer text-[50px] text-secondaryColor" />
         </a>
-        <a href="mailto:rentreeapp9@gmail.com" target="_blank" rel="noreferrer">
+        <a href="mailto:therentree@gmail.com" target="_blank" rel="noreferrer">
           <MdEmail className="cursor-pointer text-[50px] text-secondaryColor" />
         </a>
         <a href="https://x.com/RentreeApp" target="_blank" rel="noreferrer">
