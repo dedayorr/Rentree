@@ -83,7 +83,7 @@ function SectionFour() {
               <span className="text-primaryColor underline">@rentree_app</span>
             </a>
             <a
-              href="https://x.com/RentreeApp"
+              href="https://x.com/the_rentree?s=11"
               target="_blank"
               rel="noreferrer"
               className=""
