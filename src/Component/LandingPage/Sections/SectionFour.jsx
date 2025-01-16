@@ -55,10 +55,21 @@ function SectionFour() {
               +2349060770017
             </a>
           </div>
+          <div>
+            Address:{" "}
+            <span className="text-primaryColor">
+              Abiodun Falade St, Osogbo 230284, Osun, Nigeria
+            </span>
+          </div>
           <p className="my-[5%]">Follow us on social media:</p>
           <div className="flex flex-col">
             {" "}
-            <a href="https://www.facebook.com/profile.php?id=61564336841516" target="_blank" rel="noreferrer" className="">
+            <a
+              href="https://www.facebook.com/profile.php?id=61564336841516"
+              target="_blank"
+              rel="noreferrer"
+              className=""
+            >
               Facebook :{" "}
               <span className="text-primaryColor underline">facebook link</span>
             </a>
