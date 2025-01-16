@@ -74,7 +74,7 @@ function SectionFour() {
               <span className="text-primaryColor underline">facebook link</span>
             </a>
             <a
-              href="https://www.instagram.com/rentree_app"
+              href="https://www.instagram.com/the_rentree?igsh=MXNiNzk0d3RsamF1Ng%3D%3D&utm_source=qr"
               target="_blank"
               rel="noreferrer"
               className=""

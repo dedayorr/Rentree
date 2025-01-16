@@ -28,7 +28,7 @@ function Footer() {
 
       <div className="flex gap-[10%] justify-center my-[10%] lg:my-[2%]">
         <a
-          href="https://www.instagram.com/rentree_app"
+          href="https://www.instagram.com/the_rentree?igsh=MXNiNzk0d3RsamF1Ng%3D%3D&utm_source=qr"
           target="_blank"
           rel="noreferrer"
         >
